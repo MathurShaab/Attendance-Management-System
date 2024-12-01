@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Attendance Management - Dashboard</title>
+</head>
+<body>
+
+  <div class="dashboard">
+    <h1>Attendance Management</h1>
+
+    <!-- File Upload Section -->
+    <div class="file-upload">
+      <label for="file-upload">Upload Student Data (CSV/TXT):</label>
+      <input type="file" id="file-upload" accept=".csv, .txt">
+    </div>
+
+    <!-- Attendance Form Section -->
+    <div id="student-list">
+      <h2>Mark Attendance</h2>
+      <form id="attendance-form"></form>
+    </div>
+
+    <!-- Pie Chart for Attendance -->
+    <div id="category-chart-container">
+      <h3>Category-wise Attendance Chart</h3>
+      <canvas id="category-chart" width="400" height="200"></canvas>
+    </div>
+
+    <!-- Save Attendance Button -->
+    <div class="save-button">
+      <button id="save-attendance">Save Attendance</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

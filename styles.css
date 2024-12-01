@@ -1,0 +1,207 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Main Dashboard Styling */
+  .dashboard {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #FF9933, white, #138808); /* Indian flag gradient */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FF9933; /* Orange from the flag */
+    text-shadow: 
+        -1px -1px 0 black, /* Top-left */
+         1px -1px 0 black, /* Top-right */
+        -1px  1px 0 black, /* Bottom-left */
+         1px  1px 0 black; /* Bottom-right */
+}
+
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #138808; /* Green from the flag */
+  }
+  
+  label {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #333;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 20px;
+    background-color: #FF9933; /* Orange from the flag */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e6892e; /* Darker Orange */
+  }
+  
+  /* Attendance Form */
+  #attendance-form {
+    margin-bottom: 20px;
+  }
+  
+  .student-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .student-item label {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Statistics Section */
+  .stats {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .stats div {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .stats div h3 {
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .stats div p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF9933; /* Orange for emphasis */
+  }
+  
+  /* Chart Section */
+  .chart-container {
+    margin-top: 30px;
+  }
+  
+  canvas {
+    width: 100% !important;
+    height: 400px !important;
+  }
+  
+  /* Styling for Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #FF9933; /* Orange from the flag */
+    color: white;
+  }
+  
+  table td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Additional Responsive Styling */
+  @media (max-width: 1024px) { /* Tablet */
+    .dashboard {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stats div {
+      width: 80%;
+      margin-bottom: 15px;
+    }
+  
+    /* Adjust charts for tablets */
+    .chart-container canvas {
+      height: 300px !important;
+    }
+  }
+  
+  @media (max-width: 768px) { /* Mobile */
+    .dashboard {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stats div {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    /* Adjust charts for mobile */
+    .chart-container canvas {
+      height: 250px !important;
+    }
+  }
+  
