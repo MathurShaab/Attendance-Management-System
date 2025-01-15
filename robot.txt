@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mathurshaab.github.io/Attendance-Management-System/sitemap.xml
